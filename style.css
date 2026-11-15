@@ -62,7 +62,7 @@
 
     .hero {
         min-height: 100svh;
-        padding: 90px 0 35px;
+        padding: 85px 0 25px;
     }
 
     .hero-layout {
@@ -70,7 +70,7 @@
         grid-template-columns: 60% 40%;
         align-items: center;
         gap: 0;
-        padding: 45px 16px 35px;
+        padding: 30px 12px;
         width: 100%;
         box-sizing: border-box;
     }
@@ -84,16 +84,42 @@
         z-index: 2;
     }
 
+    /* Texto superior */
+    .hero-content .eyebrow {
+        font-size: 8px;
+        line-height: 1.5;
+        letter-spacing: 1.5px;
+    }
+
+    /* Título */
     .hero-content h1 {
-        font-size: clamp(27px, 7vw, 38px);
+        font-size: clamp(25px, 6.5vw, 34px);
         line-height: 1.08;
+        margin: 12px 0;
     }
 
+    /* Parágrafo */
     .hero-content p {
-        font-size: 12px;
-        line-height: 1.6;
+        font-size: 11px;
+        line-height: 1.5;
+        margin-bottom: 14px;
     }
 
+    /* Botão */
+    .hero-content .btn {
+        font-size: 9px;
+        padding: 11px 12px;
+        letter-spacing: .5px;
+    }
+
+    /* Informações complementares */
+    .hero-note {
+        font-size: 8px;
+        gap: 6px;
+        margin-top: 14px;
+    }
+
+    /* IMAGEM: PRESERVADA */
     .hero-photo {
         display: block;
         grid-column: 2;
