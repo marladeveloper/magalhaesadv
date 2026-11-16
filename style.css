@@ -14,8 +14,8 @@
     grid-template-columns: 1fr 0.9fr;
     align-items: center;
     gap: 50px;
-    padding-left: 8%;
-    padding-right: 5%;
+    padding-left: 0%;
+    
 }
 
 .hero-content {
@@ -29,6 +29,8 @@
     height: 620px;
     position: relative;
     overflow: hidden;
+     justify-self: end;
+    transform: translateX(120px);
 
     -webkit-mask-image: linear-gradient(
         to right,
@@ -55,31 +57,3 @@
     mix-blend-mode: normal;
 }
 
-/* RESPONSIVIDADE */
-
-@media (max-width: 768px) {
-    .hero-layout {
-        grid-template-columns: 1fr;
-        padding: 120px 24px 50px;
-        gap: 30px;
-    }
-
-    .hero-photo {
-        height: 480px;
-        max-width: 100%;
-        -webkit-mask-image: linear-gradient(
-            to bottom,
-            transparent,
-            black 12%,
-            black 90%,
-            transparent
-        );
-        mask-image: linear-gradient(
-            to bottom,
-            transparent,
-            black 12%,
-            black 90%,
-            transparent
-        );
-    }
-}
